@@ -1,0 +1,146 @@
+.footerTopContainer
+{
+    margin-top: 16px;
+    padding: 0;
+    text-align: center;
+    border-top: 1px solid #f3f3f3;
+    width: 100%;
+    height: auto;
+    .newsLetter
+    {
+        padding: 0 16px;
+        margin-top: 40px;
+        // max-width: 1200px;
+        height: auto;
+
+        .newsletter__title
+        {
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 38px;
+            margin-bottom: 8px;
+            color:black;
+            text-transform: uppercase;
+        }
+        .newsletter__subtitle
+        {
+            margin: 0 0px 24px;
+            color: black;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+            text-align: center;
+        }
+        .newaletter-input
+        {
+            .enter-email
+            {
+                padding: 12px 0px;
+                width: 316px;
+                font-weight: 400;
+                border-radius: 0;
+                text-indent: 14px;
+                box-sizing: border-box;
+                height: 48px;
+                margin-right: 0;
+                font-size: 14px;
+                border: 1px solid #e1e1e1;
+                outline: none;
+            }
+            .sign-btn
+            {
+                text-align: center;
+                height: 48px;
+                background-color: black;
+                color: #f8f8f8;
+                font-size: 14px;
+                line-height: 24px;
+                border: 0;
+                max-width: 343px;
+                margin: 0 auto;
+                padding: 1px 6px;
+            }
+        }
+
+        .newsletter-checkbox-container
+        {
+            display: flex;
+            justify-content: center;
+            .newsletter-checkbox
+            {
+                display: flex;
+                align-items: center;
+                position: relative;
+                margin: 64px 0 40px;
+                .ui-checkbox  
+                {
+                
+                    width: 1.5em;
+                    height: 1.5em;
+                    opacity: 0;
+                    position: absolute;
+                    z-index: 100;
+                }
+
+                .checkicon
+                {
+                    position: absolute;
+                    text-align: center;
+                    // color: white;
+                    padding: 5px;
+                    color: white;
+                    opacity: 1;
+                    
+                }
+              
+                .ui-checkbox-label
+                {
+                    // text-align: center;
+                    font-size: 16px;
+                    margin: 5px 3px 5px;
+                    display:flex;
+                  
+                    
+                }
+                .ui-checkbox-label::before
+                {
+                    content:' ';
+                    width: 1.3em;
+                    height: 1.3em;
+                    border: .05em solid black;
+                    margin: 0px 16px 0px 0px;
+                }
+                // .ui-checkbox-label:hover::before,
+                // .ui-checkbox:hover + .ui-checkbox-label::before
+                // {
+                //         background-color: black;
+                // }
+
+                .ui-checkbox:checked +label::before 
+                {
+                    background-color: black;
+                    
+                }
+
+            }
+        }
+        
+        .privacy
+        {
+            margin: 0px 358.5px 36px;
+            span 
+            {
+                font-size: 12px;
+                font-family: Arial, Helvetica, sans-serif;
+                a 
+                {
+                    // text-decoration: none;
+                    color: black;
+                    font-weight: 600;
+                }
+            }
+        }
+        
+    }
+}
+

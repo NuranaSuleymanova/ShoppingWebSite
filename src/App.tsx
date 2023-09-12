@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Modal from 'react-modal'; // Import Modal from react-modal
+import { Route, Routes,Navigate  } from "react-router-dom";
+import WomenListCard from './Pages/WomenListCard';
+import Home from './Home';
+import DetailsProduct from './Pages/WomenListCardAllSection/DetailsProduct';
+import AllDetailsPaageSession from './Pages/DetailsPage/AllDetailsPaageSession';
+import BasketPage from './Pages/DetailsPage/BasketPage';
+import HeartList from './Pages/DetailsPage/HeartList';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     
+     <Routes>
+         {/* <Route path='/' element={<NavbarTop/>}></Route> */}
+         <Route path='/details' element={<WomenListCard />}></Route>
+         <Route path='/' element={ <Home />}></Route>
+         <Route path='/details/product/:id' element={<AllDetailsPaageSession/>}> </Route>
+         <Route path='/basketpage' element={<BasketPage />}> </Route>
+         <Route path='/heartlist' element={<HeartList/>} ></Route>
+        </Routes>
     </div>
   );
 }

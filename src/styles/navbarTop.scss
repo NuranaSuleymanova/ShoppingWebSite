@@ -1,0 +1,65 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbarTop
+{
+     position: fixed;
+     z-index: 9999;
+     width: 100%;
+    .navbarTopContent
+    {
+        width: 100%;
+        height: 34px;
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .exchange 
+        {
+            img {
+                width: 18px;
+                height: 18px;
+            }
+        }
+        a 
+        {
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .account 
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .user ,.heart
+            {
+                margin-right: 20px;
+            }
+        
+            .totalprice
+            {   
+                display: flex;
+                align-items: center;
+                width: 89px;
+                height: 34px;
+                background-color: #FBC356;
+                font-size: 18PX;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 0px 0px 0px 20px;
+               
+                span 
+                {
+                    font-size: 15px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

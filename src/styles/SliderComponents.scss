@@ -1,0 +1,217 @@
+.slider-container
+{
+
+ 
+    width: 99vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    .slider
+    {
+        padding: 40px 0;
+        .flex-container
+        {
+            position: relative;
+            max-width: 100%;
+            display: block;
+            // flex-direction: column;
+            // align-items: center;
+            // justify-content: center;
+            .silder-header 
+            {
+                    margin-bottom: 32px;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    h2 
+                    {
+                        font-weight: 400;
+                        display: block;
+                        margin-bottom: 16px;
+                        line-height: 1.2;
+                        font-size: 32px;
+                    }
+                    .slide-title
+                    {
+                        height: 24px;
+                        text-decoration: none;
+                       
+                        border-bottom: 2px solid black;
+                        font-size: 16px;
+                        font-weight: 800;
+                        text-align: center;
+                        box-sizing: border-box;
+                        // border: none;
+                        letter-spacing: 0.5px;
+                        color: black;
+                        font-family: Arial, Helvetica, sans-serif;
+                        
+
+                    }
+            }
+        }
+        .slick-slider
+        {
+            // margin-right: 20px;
+            .slide 
+            {
+                position: relative;
+                width: 100%;
+                left: 0;
+               
+        .image-slide 
+                
+          {
+            max-width: 380px;
+            height: auto;
+            display: block;
+            transition: transform .4s ease;
+            overflow-clip-margin: content-box;
+            overflow: clip;
+           width: 100%;
+         
+          } 
+          .slider-username
+          {
+              position: absolute;
+              bottom: 16px;
+              right: 30px;
+              padding: 4px 8px;
+              background-color: #f8f8f8;
+              border-radius: 16px;
+              font-size: 12px;
+              font-weight: 500;
+              line-height: normal;
+              color: #4d4d4d;
+          }
+       
+            }
+         .slide:hover .image-slide
+         {
+            transform: scale(1.03);
+         }
+        }
+    }
+
+}
+
+.modal-open {
+    overflow: hidden;
+    // position: fixed;
+  }
+
+
+
+  .modal-content 
+  {
+    .icon-ui-close
+    {
+        width: 58px;
+        height: 58px;
+        padding: 15px;
+        background: transparent;
+        color: inherit;
+        border: none;
+    }
+    .modal-image
+    {
+        img 
+        {
+
+        }
+       
+    }
+    .content 
+    {
+       .ugc-overlay-source
+       {
+        margin: 0px 0px 40px;
+        padding: 34px 42px 0;
+        display: flex;
+         .ugc-overlay-source__image
+         {
+             border-radius: 50%;
+             width: 23px;
+             height: 23px;
+            margin: 0px 10px 0px 0px;
+         }
+         .ugc-overlay__meta
+         {
+            .ugc-overlay-source__name
+            {
+                    font-size: 14px;
+                    font-family: Arial, Helvetica, sans-serif;
+            }
+            .ugc-overlay__meta-row
+            {
+                .ugc-overlay__timestamp
+                {
+                        color: #999999;
+                        font-size: 10px;
+                        font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+         }
+       }
+       .ugc-shop-the-look
+       {
+        padding: 0px 42px 34px;
+
+        .ugc-shop-the-look__title
+        {
+            margin: 0px 0px 20px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+          .look-product
+          {
+            position: relative;
+            .look-product-image
+            {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+            }
+            .wish-list
+            {
+                position: absolute;
+                // right: 100px;
+                left: 70px;
+                top: 70px;
+                background-color: white;
+                border: none;
+                border-radius: 50%;
+                width: 27px;
+                height: 27px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+          }
+          .look-product-desc
+          {
+            .look-product-price
+            {
+                display: flex;
+                justify-content: flex-start;
+                .price 
+                {
+                    font-size: 12px;
+                    font-weight: 600;
+                    font-family: Arial, Helvetica, sans-serif;
+                    margin: 5px 0px;
+                }
+                
+            }
+            .title
+            {
+                font-size: 12px;
+                font-family: Arial, Helvetica, sans-serif;
+                
+            }
+          }
+       }
+    }
+  }
